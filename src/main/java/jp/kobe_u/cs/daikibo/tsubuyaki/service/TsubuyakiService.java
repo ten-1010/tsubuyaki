@@ -52,6 +52,7 @@ public class TsubuyakiService {
     }
 // つぶやき検索
     public List<Tsubuyaki> searchTsubuyaki(String keyword) {
+
         Iterable<Tsubuyaki> found = repo.findByCommentLike(keyword);
         ArrayList<Tsubuyaki> list = new ArrayList<>();
         found.forEach(list::add);
