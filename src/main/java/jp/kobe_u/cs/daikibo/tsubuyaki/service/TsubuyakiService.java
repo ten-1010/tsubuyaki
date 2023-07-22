@@ -50,7 +50,7 @@ public class TsubuyakiService {
         return list;
 
     }
-// つぶやきの検索
+// つぶやき検索
     public List<Tsubuyaki> searchTsubuyaki(String keyword) {
         Iterable<Tsubuyaki> found = repo.findByCommentLike(keyword);
         ArrayList<Tsubuyaki> list = new ArrayList<>();
